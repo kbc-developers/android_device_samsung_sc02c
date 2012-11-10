@@ -35,12 +35,8 @@ PRODUCT_PACKAGES += \
     GalaxyS2Settings
 
 # Sensors
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/usr/lib/sensors.exynos4.so:system/lib/hw/sensors.exynos4.so
-
-# Emoji
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/usr/lib/libemoji_docomo.so:system/lib/libemoji_docomo.so
+#PRODUCT_PACKAGES += \
+#    sensors.exynos4
 
 # Keylayout
 PRODUCT_COPY_FILES += \
