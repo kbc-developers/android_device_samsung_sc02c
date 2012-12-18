@@ -30,10 +30,12 @@ for FILE in `cat proprietary-common-files.txt | grep -v ^# | grep -v ^$`; do
     if [ ! -d $COMMONBASE/$DIR ]; then
         mkdir -p $COMMONBASE/$DIR
     fi
-    adb pull /$FILE $COMMONBASE/$FILE
+    #adb pull /$FILE $COMMONBASE/$FILE
+    cp -av ./proprietary/$FILE $COMMONBASE/$FILE
 done
 
-adb pull /system/lib/hw/vendor-camera.exynos4.so $COMMONBASE/system/lib/hw/camera.exynos4.so
+#adb pull /system/lib/hw/vendor-camera.exynos4.so $COMMONBASE/system/lib/hw/camera.exynos4.so
+cp -av ./proprietary/system/lib/hw/vendor-camera.exynos4.so $COMMONBASE/system/lib/hw/camera.exynos4.so
 
 echo "Pulling device specific files..."
 for FILE in `cat proprietary-$DEVICE-files.txt | grep -v ^# | grep -v ^$`; do
@@ -41,7 +43,8 @@ for FILE in `cat proprietary-$DEVICE-files.txt | grep -v ^# | grep -v ^$`; do
     if [ ! -d $DEVICEBASE/$DIR ]; then
         mkdir -p $DEVICEBASE/$DIR
     fi
-    adb pull /$FILE $DEVICEBASE/$FILE
+    #adb pull /$FILE $DEVICEBASE/$FILE
+    cp -av ./proprietary/$FILE $DEVICEBASE/$FILE
 done
 
 (cat << EOF) | sed s/__COMMON__/$COMMON/g | sed s/__DEVICE__/$DEVICE/g | sed s/__VENDOR__/$VENDOR/g > $COMMONMAKEFILE
