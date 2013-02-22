@@ -19,19 +19,19 @@
 
 -include device/samsung/galaxys2-common/BoardCommonConfig.mk
 
-TARGET_BOARD_INFO_FILE := device/samsung/i9100/board-info.txt
+TARGET_BOARD_INFO_FILE := device/samsung/sc02c/board-info.txt
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9100/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/sc02c/bluetooth
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
-TARGET_KERNEL_CONFIG := cyanogenmod_i9100_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/exynos4210dcm
+TARGET_KERNEL_CONFIG := cyanogenmod_sc02c_defconfig
 
-TARGET_SPECIFIC_HEADER_PATH += device/samsung/i9100/overlay/include
+TARGET_SPECIFIC_HEADER_PATH += device/samsung/sc02c/overlay/include
 EXYNOS4210_ENHANCEMENTS := true
 # assert
-TARGET_OTA_ASSERT_DEVICE := galaxys2,i9100,SC-02C,GT-I9100,GT-I9100M,GT-I9100P,GT-I9100T
+TARGET_OTA_ASSERT_DEVICE := galaxys2,SC-02C,i9100,GT-I9100,GT-I9100M,GT-I9100P,GT-I9100T
 
 # Use the non-open-source parts, if they're present
--include vendor/samsung/i9100/BoardConfigVendor.mk
+-include vendor/samsung/sc02c/BoardConfigVendor.mk

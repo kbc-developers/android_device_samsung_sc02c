@@ -28,11 +28,11 @@ TARGET_SCREEN_WIDTH := 480
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/i9100/full_i9100.mk)
+$(call inherit-product, device/samsung/sc02c/full_sc02c.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := i9100
-PRODUCT_NAME := cm_i9100
+PRODUCT_DEVICE := sc02c
+PRODUCT_NAME := cm_sc02c
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SC-02C
 

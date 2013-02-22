@@ -1,5 +1,5 @@
 #
-# system.prop for i9100
+# system.prop for sc02c
 #
 
 rild.libpath=/system/lib/libsec-ril.so
