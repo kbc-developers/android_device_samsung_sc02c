@@ -1,0 +1,11 @@
+Copyright 2012 - The CyanogenMod Project (Modded KBC)
+
+Device configuration for Samsung Galaxy S2 (ntt docomo model).
+
+WORK IN PROGRESS. WILL EAT YOUR CAT.
+
+Please add the repo of sc02c to local_manifest.xml
+
+  <project name="kbc-developers/android_device_samsung_sc02c" path="device/samsung/sc02c" remote="github" revision="cm-10.1" />
+  <project name="kbc-developers/android_kernel_samsung_exynos4210dcm" path="kernel/samsung/exynos4210dcm" remote="github" revision="android-3.0-v7.1" />
+
