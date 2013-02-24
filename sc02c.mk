@@ -35,8 +35,8 @@ PRODUCT_PACKAGES += \
     GalaxyS2Settings
 
 # Sensors
-#PRODUCT_PACKAGES += \
-#    sensors.exynos4
+PRODUCT_PACKAGES += \
+    sensors.exynos4
 
 # Keylayout
 PRODUCT_COPY_FILES += \
