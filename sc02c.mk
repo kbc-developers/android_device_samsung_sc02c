@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# Init files
+PRODUCT_COPY_FILES := \
+    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
+    $(LOCAL_PATH)/rootdir/init.prop.sh:root/init.prop.sh
+
 # Include common makefile
 $(call inherit-product, device/samsung/galaxys2-common/common.mk)
 
