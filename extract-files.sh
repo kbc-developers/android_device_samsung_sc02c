@@ -110,4 +110,4 @@ DEVICE_PACKAGE_OVERLAYS += vendor/__VENDOR__/__DEVICE__/overlay
 \$(call inherit-product, vendor/__VENDOR__/__DEVICE__/__DEVICE__-vendor-blobs.mk)
 EOF
 
-./../../../device/samsung/galaxys2-common/extract-files.sh
+./../../../device/samsung/galaxys2-common/extract-files.sh $1
