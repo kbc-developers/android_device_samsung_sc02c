@@ -1,19 +1,19 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string-array name="mdnie_scenario_entries">
-        <item>カメラ (デフォルト)</item>
+        <item>CyanogenMod (デフォルト)</item>
+        <item>UI</item>
         <item>ビデオ</item>
         <item>ビデオ (暖色)</item>
         <item>ビデオ (寒色)</item>
-        <item>UI</item>
         <item>ナビゲーション</item>
         <item>ギャラリー</item>
         <item>VT</item>
     </string-array>
 
     <string-array name="mdnie_mode_entries">
-        <item>標準 (デフォルト)</item>
         <item>ダイナミック</item>
+        <item>標準 (デフォルト)</item>
         <item>ノーマル</item>
         <item>ムービー</item>
     </string-array>
