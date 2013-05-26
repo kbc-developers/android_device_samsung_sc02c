@@ -25,7 +25,7 @@ TARGET_BOARD_INFO_FILE := device/samsung/sc02c/board-info.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/sc02c/bluetooth
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/samsung/exynos4412jpn
+TARGET_KERNEL_SOURCE := kernel/samsung/exynos4210jpn
 TARGET_KERNEL_CONFIG := cyanogenmod_sc02c_defconfig
 
 TARGET_SPECIFIC_HEADER_PATH += device/samsung/sc02c/overlay/include
