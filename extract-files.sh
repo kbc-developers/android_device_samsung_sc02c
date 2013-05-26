@@ -20,10 +20,8 @@ DEVICEOUTDIR=vendor/$VENDOR/$DEVICE
 DEVICEBASE=../../../$DEVICEOUTDIR/proprietary
 DEVICEMAKEFILE=../../../$DEVICEOUTDIR/$DEVICE-vendor-blobs.mk
 COMMONPROPS=../galaxys2-common/proprietary-files.txt
-#adb root
-#adb wait-for-device
-
-export SRC_PATH=$1
+adb root
+adb wait-for-device
 
 echo "Pulling device specific files..."
 for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do
@@ -31,8 +29,7 @@ for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do
     if [ ! -d $DEVICEBASE/$DIR ]; then
         mkdir -p $DEVICEBASE/$DIR
     fi
-    #adb pull /$FILE $DEVICEBASE/$FILE
-    cp -av $SRC_PATH/$FILE $DEVICEBASE/$FILE
+    adb pull /$FILE $DEVICEBASE/$FILE
 done
 
 
@@ -110,4 +107,4 @@ DEVICE_PACKAGE_OVERLAYS += vendor/__VENDOR__/__DEVICE__/overlay
 \$(call inherit-product, vendor/__VENDOR__/__DEVICE__/__DEVICE__-vendor-blobs.mk)
 EOF
 
-./../../../device/samsung/galaxys2-common/extract-files.sh $1
+./../../../device/samsung/galaxys2-common/extract-files.sh
