@@ -28,8 +28,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/sc02c/bluetooth
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos4210jpn
 TARGET_KERNEL_CONFIG := cyanogenmod_sc02c_defconfig
 
-TARGET_SPECIFIC_HEADER_PATH += device/samsung/sc02c/overlay/include
-
 # assert
 TARGET_OTA_ASSERT_DEVICE := galaxys2,SC-02C,i9100,GT-I9100,GT-I9100M,GT-I9100P,GT-I9100T
 
