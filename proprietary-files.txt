@@ -2,6 +2,5 @@ system/lib/libsec-ril.so
 system/lib/libsecril-client.so 
 system/lib/hw/gps.exynos4.so
 system/lib/libakm.so
-system/lib/hw/sensors.exynos4.so
 system/lib/libemoji_docomo.so
 system/fonts/truetypeEmoji.ttf

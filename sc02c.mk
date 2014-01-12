@@ -36,8 +36,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
 
 # Sensors
-#PRODUCT_PACKAGES += \
-#    sensors.exynos4
+PRODUCT_PACKAGES += \
+    sensors.exynos4
 
 # Keylayout
 PRODUCT_COPY_FILES += \
